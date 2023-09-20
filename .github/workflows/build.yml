@@ -11,11 +11,11 @@ jobs:                                # Job 설정
       - name: Checkout source code.   # Repo checkout
         uses: actions/checkout@v2
       
+      - name: Set up Node.js 
+        uses: actions/setup-node@v1
+
       - name: Check Node v            # Node v 확인
         run: node -v
-
-      - name: Install Dependencies    # 의존 파일 설치
-        run: yarn install --frozen-lockfile
-
-      - name: Build                   # React Build
-        run: yarn build
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
