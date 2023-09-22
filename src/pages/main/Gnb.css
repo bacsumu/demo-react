@@ -1,0 +1,7 @@
+.gnb {
+    background-color: aquamarine;
+}
+
+.gnb ul li {
+    outline: 1px dotted red;
+}
