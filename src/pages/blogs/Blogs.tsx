@@ -1,7 +1,7 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link, Outlet } from "react-router-dom";
 
-import ContentsList from "../../components/blogs/ContentsList"
-import ContentWrite from "../../components/blogs/ContentWrite"
+import ContentsList from "./ContentsList"
+import ContentWrite from "./ContentWrite"
 
 export default function Blogs() {
   return (
@@ -9,13 +9,12 @@ export default function Blogs() {
       <h1>Blogs</h1>
       
       <div>
-        <Link to="/blogs/write">write</Link>
+        <p><Link to="/blogs">blog home</Link></p>
+        <p><Link to="/blogs/write">write</Link></p>
       </div>
 
-      <Routes>
-          <Route index element={<ContentsList />} />
-          <Route path="/write" element={<ContentWrite />} />
-      </Routes>
+      <Outlet />
+      
     </>
   );
 }

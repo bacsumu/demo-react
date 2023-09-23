@@ -8,13 +8,17 @@ import reportWebVitals from "./reportWebVitals";
 import MainLayout from "./pages/layouts/Main";
 import Home from "./pages/home/Home";
 import { BrowserRouter } from "react-router-dom";
+import MainRoute from "./routes/MainRoute";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
+
 root.render(
   <BrowserRouter>
-    <MainLayout></MainLayout>
+    {/* <MainLayout /> */}
+
+    <MainRoute />
   </BrowserRouter>
 );
 

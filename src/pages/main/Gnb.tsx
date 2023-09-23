@@ -1,4 +1,4 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, NavLink } from "react-router-dom";
 
 //css
 import "./Gnb.css";
@@ -6,7 +6,7 @@ import "./Gnb.css";
 //pages
 import Home from "../home/Home";
 import Blogs from "../blogs/Blogs";
-import NoPage from "../../components/common/NoPage";
+import NoPage from "../error/NoPage";
 
 export default function Gnb() {
   return (
@@ -14,24 +14,16 @@ export default function Gnb() {
       <div className="gnb">
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <Link to="/blogs">Blogs</Link>
+            <NavLink to="/blogs">Blogs</NavLink>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <NavLink to="/contact">Contact</NavLink>
           </li>
         </ul>
       </div>
-
-      <Routes>
-        <Route path="/">
-          <Route index element={<Home />} />
-          <Route path="/blogs" element={<Blogs />} />
-          <Route path="*" element={<NoPage />} />
-        </Route>
-      </Routes>
     </>
   );
 }

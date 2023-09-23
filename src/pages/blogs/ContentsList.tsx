@@ -11,13 +11,12 @@ function ContentItem(props:BlogItem){
 }
 
 export default function ContentsList() {
+
   const contentsList:BlogItem[] = [
     {id:'1', title:'test1', content:'contents', views:0},
     {id:'2', title:'test2', content:'contents'},
     {id:'3', title:'test3', content:'contents'},
   ];
-
-  
 
   return (
     <>
