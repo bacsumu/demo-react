@@ -1,9 +1,7 @@
+import { BlogItem } from "../../model/blogs/Blogs";
 
-function ContentItem(props:{
-  id:string;
-  title:string;
-  content:string;
-}){
+
+function ContentItem(props:BlogItem){
   return (
     <div key={props.id}>
       <p><div>{props.title}</div></p>
@@ -13,12 +11,8 @@ function ContentItem(props:{
 }
 
 export default function ContentsList() {
-  const contentsList: {
-    id:string;
-    title:string;
-    content:string;
-  }[] = [
-    {id:'1', title:'test1', content:'contents'},
+  const contentsList:BlogItem[] = [
+    {id:'1', title:'test1', content:'contents', views:0},
     {id:'2', title:'test2', content:'contents'},
     {id:'3', title:'test3', content:'contents'},
   ];

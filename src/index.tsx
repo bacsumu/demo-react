@@ -5,7 +5,7 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
 // layouts
-import MainLayout from "./layouts/Main";
+import MainLayout from "./pages/layouts/Main";
 import Home from "./pages/home/Home";
 import { BrowserRouter } from "react-router-dom";
 
