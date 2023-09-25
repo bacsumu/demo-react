@@ -1,7 +1,7 @@
 export default function Header() {
   return (
     <header>
-      <h2>This is Demo-React</h2>
+      <h2>Demo-React header</h2>
     </header>
   );
 }

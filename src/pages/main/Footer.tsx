@@ -1,8 +1,7 @@
 export default function Footer() {
-
-    return(
-        <footer>
-            <h2>This is Footer</h2>
-        </footer>
-    );
+  return (
+    <footer>
+      <h5>demo-react footer</h5>
+    </footer>
+  );
 }
