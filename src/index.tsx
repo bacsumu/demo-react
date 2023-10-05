@@ -15,11 +15,14 @@ const root = ReactDOM.createRoot(
 );
 
 root.render(
-  <BrowserRouter>
-    {/* <MainLayout /> */}
+  <>
+    <div>REACT_APP_PUBLIC_URL={process.env.REACT_APP_PUBLIC_URL}</div>
+    <BrowserRouter basename={process.env.REACT_APP_PUBLIC_URL}>
+      {/* <MainLayout /> */}
 
-    <MainRoute />
-  </BrowserRouter>
+      <MainRoute />
+    </BrowserRouter>
+  </>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -11,7 +11,7 @@ import React from "react";
 
 export default function MainRoute() {
   return (
-    <React.StrictMode>
+    <>
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Home />}></Route>
@@ -23,6 +23,6 @@ export default function MainRoute() {
         </Route>
         <Route path="*" element={<NoPage />} />
       </Routes>
-    </React.StrictMode>
+    </>
   );
 }

@@ -6,12 +6,9 @@ import ContentsList from "../blogs/ContentsList";
 import ContentWrite from "../blogs/ContentWrite";
 
 export default function Main() {
-    return (
-        <div>
-            <h2>Main Body</h2>
-                        
-
-      </div>
-    );
-  }
-  
+  return (
+    <div>
+      <h2>Main Body</h2>
+    </div>
+  );
+}

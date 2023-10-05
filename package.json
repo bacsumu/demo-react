@@ -11,6 +11,7 @@
     "@testing-library/user-event": "^13.5.0",
     "@types/styled-components": "^5.1.27",
     "bootstrap": "^5.3.2",
+    "env-cmd": "^10.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.1.2",
@@ -20,8 +21,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build --env production --publicPath /demo-react",
+    "start": "env-cmd -f .env.local react-scripts start",
+    "build": "env-cmd -f .env.production react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
