@@ -16,7 +16,7 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <>
-    <div>REACT_APP_PUBLIC_URL={process.env.REACT_APP_PUBLIC_URL}</div>
+    {/* <div>REACT_APP_PUBLIC_URL={process.env.REACT_APP_PUBLIC_URL}</div> */}
     <BrowserRouter basename={process.env.REACT_APP_PUBLIC_URL}>
       {/* <MainLayout /> */}
 
